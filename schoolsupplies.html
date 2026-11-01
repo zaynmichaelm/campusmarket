@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Market - School Supplies</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📚 School Supplies</h1>
+
+    
+    <div class="food-card">
+        <div class="food-info">
+            <img src="IntermediatePad.jpeg"
+            style="width:80px;height:80px;object-fit:cover;">
+            <div>
+                <h3>MICA Intermediate Pad Set</h3>
+                <p>₱150</p>
+            </div>
+        </div>
+
+        <div class="food-controls">
+
+            <input
+                type="checkbox"
+                class="supplyItem"
+                data-name="MICA Intermediate Pad Set"
+                data-price="150"
+            >
+
+            <input
+                type="number"
+                class="quantity"
+                value="1"
+                min="1"
+            >
+
+        </div>
+
+    </div>
+
+    
+    <div class="food-card">
+        <div class="food-info">
+            <img src="YellowPad.jpeg"
+            style="width:80px;height:80px;object-fit:cover;">
+            <div>
+                <h3>MICA Yellow Ruled Pad</h3>
+                <p>₱200</p>
+            </div>
+        </div>
+
+        <div class="food-controls">
+
+            <input
+                type="checkbox"
+                class="supplyItem"
+                data-name="MICA Yellow Ruled Pad"
+                data-price="200"
+            >
+
+            <input
+                type="number"
+                class="quantity"
+                value="1"
+                min="1"
+            >
+
+        </div>
+
+    </div>
+
+       <div class="food-card">
+        <div class="food-info">
+            <img src="ballpen.jpeg"
+            style="width:80px;height:80px;object-fit:cover;">
+            <div>
+                <h3>Ballpen</h3>
+                <p>₱10</p>
+            </div>
+        </div>
+
+        <div class="food-controls">
+
+            <input
+                type="checkbox"
+                class="supplyItem"
+                data-name="Ballpen"
+                data-price="10"
+            >
+
+            <input
+                type="number"
+                class="quantity"
+                value="1"
+                min="1"
+            >
+
+        </div>
+
+    </div>
+
+     <div class="food-card">
+        <div class="food-info">
+            <img src="CorrectionTape.jpeg"
+            style="width:80px;height:80px;object-fit:cover;">
+            <div>
+                <h3>Correction Tape</h3>
+                <p>₱20</p>
+            </div>
+        </div>
+
+        <div class="food-controls">
+
+            <input
+                type="checkbox"
+                class="supplyItem"
+                data-name="Correction Tape"
+                data-price="20"
+            >
+
+            <input
+                type="number"
+                class="quantity"
+                value="1"
+                min="1"
+            >
+
+        </div>
+
+    </div>
+
+    <!-- Customer Information -->
+    <div class="customer-info">
+
+        <h3>Customer Information</h3>
+
+        <input
+            type="text"
+            id="customerName"
+            placeholder="Enter your name"
+        >
+
+        <input
+            type="text"
+            id="customerSection"
+            placeholder="Enter your Grade & Section"
+        >
+
+    </div>
+
+
+
+    <!-- Checkout Section -->
+    <div class="checkout">
+
+        <h3>
+            Selected Items:
+            <span id="selectedCount">0</span>
+        </h3>
+
+        <h3>
+            Total: ₱
+            <span id="totalPrice">0</span>
+        </h3>
+
+        <button id="buyBtn">
+            Buy Selected
+        </button>
+
+        <p id="supply-success-message"></p>
+
+    </div>
+
+</div>
+
+<script src="schoolsupplies.js"></script>
+
+</body>
+</html>

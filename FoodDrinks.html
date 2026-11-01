@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Market - Food & Drinks</title>
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🍔 Food & Drinks</h1>
+
+    <div class="food-card">
+        <div class="food-info">   
+            <img src="burger.jpeg"
+            style="width:80px;height:80px;object-fit:cover;">
+        <div>
+
+        <h3>ColeSlaw Burger</h3>
+        <p>₱40</p>
+    </div>
+</div>
+        <div class="food-controls">
+
+    <input type="checkbox"
+           class="foodItem"
+           data-name="ColeSlaw Burger"
+           data-price="40">
+
+    <input type="number"
+           class="quantity"
+           value="1"
+           min="1">
+
+</div>
+    </div>
+
+    <div class="food-card">
+        <div class="food-info">
+            <img src="jacketpotato.jpeg"
+            style="width:80px;height:80px;object-fit:cover;">
+        <div>
+                <h3>Jacket Potato</h3>
+                <p>₱50</p>
+            </div>
+        </div>
+      <div class="food-controls">
+
+    <input type="checkbox"
+           class="foodItem"
+           data-name="Jacket Potato"
+           data-price="50">
+
+    <input type="number"
+           class="quantity"
+           value="1"
+           min="1">
+
+</div>
+    </div>
+
+    <div class="food-card">
+        <div class="food-info">
+             <img src="veggiechuros.jpeg"
+            style="width:80px;height:80px;object-fit:cover;">
+            <div>
+                <h3>Veggie Churros</h3>
+                <p>₱25</p>
+            </div>
+        </div>
+        <div class="food-controls">
+
+    <input type="checkbox"
+           class="foodItem"
+           data-name="Veggie Churros"
+           data-price="25">
+
+    <input type="number"
+           class="quantity"
+           value="1"
+           min="1">
+
+</div>
+    </div>
+
+    <div class="food-card">
+        <div class="food-info">
+            <img src="mashedpotato.jpeg"
+            style="width:80px;height:80px;object-fit:cover;">
+            <div>
+                <h3>Fried Mashed Potato Balls</h3>
+                <p>₱75</p>
+            </div>
+        </div>
+        <div class="food-controls">
+
+    <input type="checkbox"
+           class="foodItem"
+           data-name="Fried Mashed Potato Balls"
+           data-price="75">
+
+    <input type="number"
+           class="quantity"
+           value="1"
+           min="1">
+
+</div>
+    </div>
+
+       <div class="food-card">
+        <div class="food-info">
+             <img src="tapioca.jpeg"
+            style="width:80px;height:80px;object-fit:cover;">
+            <div>
+                <h3>Mango Tapioca</h3>
+                <p>₱35</p>
+            </div>
+        </div>
+        <div class="food-controls">
+
+    <input type="checkbox"
+           class="foodItem"
+           data-name="Mango Tapioca"
+           data-price="35">
+
+    <input type="number"
+           class="quantity"
+           value="1"
+           min="1">
+
+</div>
+    </div>
+
+
+<div class="customer-info">
+
+    <h3>Customer Information</h3>
+
+    <input
+        type="text"
+        id="customerName"
+        placeholder="Enter your name">
+
+    <input
+        type="text"
+        id="customerSection"
+        placeholder="Enter your Grade & section">
+
+</div>
+
+    <div class="checkout">
+        <h3>Selected Items: <span id="selectedCount">0</span></h3>
+        <h3>Total: ₱<span id="totalPrice">0</span></h3>
+
+        <button id="buyBtn">
+            Buy Selected
+        </button>
+
+        <p id="food-success-message"></p>
+        
+    </div>
+
+</div>
+
+<script src="fooddrinks.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Seller Dashboard</h1>
+
+        <input
+        type="text"
+        id="globalSearch"
+        placeholder="🔍 Search Order ID, Customer, Student..."
+>
+<div class="summary-cards">
+
+    <div class="summary-card">
+        <h3>🖨 Active Prints</h3>
+        <p id="activePrintCount">0</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>✅ Completed Prints</h3>
+        <p id="completedPrintCount">0</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>🍔 Food Orders</h3>
+        <p id="foodOrderCount">0</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>💰 Revenue</h3>
+        <p id="revenueCount">₱0</p>
+    </div>
+
+    <div class="summary-card">
+    <h3>📚 School Supplies</h3>
+    <p id="supplyOrderCount">0</p>
+</div>
+
+<div class="summary-card">
+    <h3>📦 Total Orders</h3>
+    <p id="totalOrderCount">0</p>
+</div>
+
+<div class="summary-card">
+    <h3>🍔 Food Revenue</h3>
+    <p id="foodRevenueCount">₱0</p>
+</div>
+
+<div class="summary-card">
+    <h3>📚 Supplies Revenue</h3>
+    <p id="suppliesRevenueCount">₱0</p>
+</div>
+
+<div class="summary-card">
+    <h3>💰 Total Revenue</h3>
+    <p id="totalRevenueCount">₱0</p>
+</div>
+
+
+</div>
+
+<h2 id="foodOrdersTitle">
+    🍔 Food & Drinks Orders
+</h2>
+
+        <div id="ordersContainer">
+
+    </div>
+
+    <h2 id="completedFoodTitle">
+    ✅ Completed Food Orders
+</h2>
+
+<div id="completedFoodContainer"></div>
+
+
+<h2 id="printingTitle">
+    🖨 Printing Orders (0)
+</h2>
+
+    <div id="printingOrdersContainer">
+
+    </div>
+
+<h2 id="completedPrintingTitle">
+    ✅ Completed Printing Orders
+</h2>
+
+<div id="completedPrintingContainer"></div>
+
+<h2 id="suppliesOrdersTitle">
+    📚 School Supplies Orders
+</h2>
+
+<div id="schoolSuppliesContainer"></div>
+
+<h2 id="completedSuppliesTitle">
+    ✅ Completed School Supplies Orders
+</h2>
+
+<div id="completedSuppliesContainer"></div>
+
+
+    </div>
+
+    <script src="seller-dashboard.js"></script>
+
+</body>
+</html>
